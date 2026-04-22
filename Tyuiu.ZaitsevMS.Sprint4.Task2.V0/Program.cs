@@ -34,7 +34,7 @@ namespace Tyuiu.ZaitsevMS.Sprint4.Task2.V0
             Console.WriteLine("Введите кол-во элементов массива: ");
             int len = Convert.ToInt32(Console.ReadLine());
 
-            int[] numsArray = new int[];
+            int[] numsArray = new int[len];
 
             for (int i = 0; i <= len - 1; i++)
             {
