@@ -8,7 +8,7 @@ using Tyuiu.ZaitsevMS.Sprint4.Task0.V30.Lib;
 namespace Tyuiu.ZaitsevMS.Sprint4.Task0.V30
 {
     internal class Program
-    {
+    { 
         static void Main(string[] args)
         {
             DataService ds = new DataService();
