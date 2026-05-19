@@ -8,7 +8,7 @@ namespace Tyuiu.ZaitsevMS.Sprint4.Task7.V26.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalculate()
+        public void ValidCalculate() 
         {
             DataService ds = new DataService();
 
