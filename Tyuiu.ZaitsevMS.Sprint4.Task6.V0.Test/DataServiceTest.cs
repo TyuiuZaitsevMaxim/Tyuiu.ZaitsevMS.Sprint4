@@ -6,7 +6,7 @@ namespace Tyuiu.ZaitsevMS.Sprint4.Task6.V9.Test
 {
     [TestClass]
     public class DataServiceTest
-    {
+    { 
         [TestMethod]
         public void ValidCalculate()
         {
