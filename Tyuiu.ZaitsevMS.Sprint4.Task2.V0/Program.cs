@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint4.Task2.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint4.Task2.V24.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint4.Task2.V0
+namespace Tyuiu.ZaitsevMS.Sprint4.Task2.V24
 {
     internal class Program
     {
@@ -18,43 +18,40 @@ namespace Tyuiu.ZaitsevMS.Sprint4.Task2.V0
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
-            Console.WriteLine("* Тема: Обрабтка целочисленной информации                                 *");
+            Console.WriteLine("* Тема: Одномерные массивы (случайный ввод)                               *");
             Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #24                                                             *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая вычисляет сумму всех элементов массива      *");
-            Console.WriteLine("* больше 10                                                               *");
+            Console.WriteLine("* Дан одномерный целочисленный массив на 12 элементов, заполненный        *");
+            Console.WriteLine("* случайными значениями в диапазоне от 4 до 9. Подсчитать сумму           *");
+            Console.WriteLine("* нечетных элементов массива.                                             *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите кол-во элементов массива: ");
-            int len = Convert.ToInt32(Console.ReadLine());
-
+            int len = 12;
             int[] numsArray = new int[len];
 
             for (int i = 0; i <= len - 1; i++)
             {
-                numsArray[i] = rnd.Next(5, 20);
+                numsArray[i] = rnd.Next(4, 10);
             }
 
             Console.WriteLine("Массив:");
-            for (int i = 0;i <= len - 1; i++)
+            for (int i = 0; i <= len - 1; i++)
             {
-                Console.WriteLine(numsArray[i] + "\t");
+                Console.Write(numsArray[i] + "\t");
             }
-
             Console.WriteLine();
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            int res = ds.Calculate(numsArray);
-
-            Console.WriteLine("Сумма элементов > 10 = " + res);
+            Console.WriteLine("Сумма нечетных элементов = " + ds.Calculate(numsArray));
             Console.ReadLine();
         }
     }

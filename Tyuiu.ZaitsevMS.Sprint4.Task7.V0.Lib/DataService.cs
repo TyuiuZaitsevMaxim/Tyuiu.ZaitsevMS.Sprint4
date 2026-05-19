@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using tyuiu.cources.programming.interfaces.Sprint4;
 
-namespace Tyuiu.ZaitsevMS.Sprint4.Task7.V0.Lib
+namespace Tyuiu.ZaitsevMS.Sprint4.Task7.V26.Lib
 {
-    public class DataService : ISprint4Task7V0
+    public class DataService : ISprint4Task7V26
     {
         public int Calculate(int rows, int columns, string value)
         {
             int[,] mtrx = new int[rows, columns];
-
-            int index = 0;
 
             for (int i = 0; i < rows; i++)
             {
@@ -24,19 +21,22 @@ namespace Tyuiu.ZaitsevMS.Sprint4.Task7.V0.Lib
                 }
             }
 
-            int count = 0;
+            int product = 1;
+            bool hasEven = false;
+
             for (int i = 0; i < rows; i++)
             {
-                for (int j = 0;j < columns; j++)
+                for (int j = 0; j < columns; j++)
                 {
-                    if (mtrx[i,j] == 0)
+                    if (mtrx[i, j] % 2 == 0)
                     {
-                        count++;
+                        product *= mtrx[i, j];
+                        hasEven = true;
                     }
                 }
             }
 
-            return count;
+            return hasEven ? product : 0;
         }
     }
 }

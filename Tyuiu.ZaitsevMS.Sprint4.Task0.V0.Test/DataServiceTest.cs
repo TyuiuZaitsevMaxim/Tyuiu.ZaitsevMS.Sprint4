@@ -1,21 +1,23 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint4.Task0.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint4.Task0.V30.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint4.Task0.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint4.Task0.V30.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalc()
+        public void ValidGetSumEvenArrEl()
         {
             DataService ds = new DataService();
 
-            int[] numsArray = { 4, 0, 3, 0, 10 };
-            int[] res = ds.Calculate(numsArray);
-            int[] numWaitArray = { 4, 1, 3, 1, 10 };
-            CollectionAssert.AreEqual(numWaitArray, res);
+            int[] numsArray = { 9, 8, 4, 6, 9, 4, 3, 6, 1, 2 };
+
+            int res = ds.GetSumEvenArrEl(numsArray);
+
+            int wait = 30;
+            Assert.AreEqual(wait, res);
         }
     }
 }

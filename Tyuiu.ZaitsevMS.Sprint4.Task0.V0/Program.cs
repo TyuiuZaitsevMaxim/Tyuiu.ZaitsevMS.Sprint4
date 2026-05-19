@@ -3,38 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint4.Task0.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint4.Task0.V30.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint4.Task0.V0
+namespace Tyuiu.ZaitsevMS.Sprint4.Task0.V30
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            
+
             Console.Title = "Спринт #4 | Выполнил: Зайцев М. С. | ИБКСб-25-1";
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
             Console.WriteLine("* Тема: Одномерные массивы (статический ввод)                             *");
             Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #30                                                             *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу которая заменяет все нули в массиве на единицы       *");
+            Console.WriteLine("* Дан одномерный целочисленный массив на 10 элементов, заполненный        *");
+            Console.WriteLine("* статическими значениями в диапазоне от 0 до 9. Подсчитать сумму         *");
+            Console.WriteLine("* четных элементов массива.                                               *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int[] numsArray = { 0, 5, 78, 0, 6 };
+            int[] numsArray = { 9, 8, 4, 6, 9, 4, 3, 6, 1, 2 };
 
             Console.WriteLine("Исходный массив: ");
-            for (int i = 0; i <= numsArray.Length-1; i++)
+            for (int i = 0; i <= numsArray.Length - 1; i++)
             {
-                Console.Write(numsArray[i]+"\t");
+                Console.Write(numsArray[i] + "\t");
             }
             Console.WriteLine();
 
@@ -42,15 +44,7 @@ namespace Tyuiu.ZaitsevMS.Sprint4.Task0.V0
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Конечный массив: ");
-            numsArray = ds.Calculate(numsArray);
-
-            for (int i = 0; i <= numsArray.Length-1;i++)
-            {
-                Console.Write(numsArray[i] + "\t");
-            }
-
-            Console.WriteLine();
+            Console.WriteLine("Сумма четных элементов = " + ds.GetSumEvenArrEl(numsArray));
             Console.ReadLine();
         }
     }

@@ -1,19 +1,22 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint4.Task6.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint4.Task6.V9.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint4.Task6.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint4.Task6.V9.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalc()
+        public void ValidCalculate()
         {
             DataService ds = new DataService();
-            var week = new string[] { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
-            int res = ds.Calculate(week);
-            int wait = 4;
+
+            var colors = new string[] { "Красный", "Оранжевый", "Желтый", "Зеленый", "Синий", "Индиго", "Фиолетовый" };
+
+            int res = ds.Calculate(colors);
+
+            int wait = 3;
             Assert.AreEqual(wait, res);
         }
     }

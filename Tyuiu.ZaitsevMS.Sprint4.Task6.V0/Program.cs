@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.ZaitsevMS.Sprint4.Task6.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint4.Task6.V9.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint4.Task6.V0
+namespace Tyuiu.ZaitsevMS.Sprint4.Task6.V9
 {
     internal class Program
     {
@@ -19,28 +19,30 @@ namespace Tyuiu.ZaitsevMS.Sprint4.Task6.V0
             Console.WriteLine("* Спринт #4                                                               *");
             Console.WriteLine("* Тема: Класс Array                                                       *");
             Console.WriteLine("* Задание #6                                                              *");
-            Console.WriteLine("* Вариант #0                                                              *");
+            Console.WriteLine("* Вариант #9                                                              *");
             Console.WriteLine("* Выполнил: Зайцев Максим Сергеевич | ИБКСб-25-1                          *");
+            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("* УСЛОВИЕ:                                                                *");
+            Console.WriteLine("* Дан строковый массив данных. Используя класс Array подсчитайте          *");
+            Console.WriteLine("* количество элементов, длина которых меньше 7.                           *");
+            Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            var week = new string[] { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
+            var colors = new string[] { "Красный", "Оранжевый", "Желтый", "Зеленый", "Синий", "Индиго", "Фиолетовый" };
 
             Console.WriteLine("Исходный массив: ");
-            for (int i = 0; i <= week.Length - 1; i++)
+            for (int i = 0; i <= colors.Length - 1; i++)
             {
-                Console.WriteLine(week[i]);
+                Console.WriteLine(colors[i]);
             }
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Кол-во элементов с длинной 7:");
 
-            int nums = ds.Calculate(week);
-
-            Console.WriteLine(nums);
+            Console.WriteLine("Кол-во элементов с длиной меньше 7: " + ds.Calculate(colors));
             Console.ReadLine();
         }
     }

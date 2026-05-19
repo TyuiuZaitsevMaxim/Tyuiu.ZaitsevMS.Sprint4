@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E2D9C275-BEF9-4179-A954-E2FA3113056E}</ProjectGuid>
+    <ProjectGuid>{5F075F48-5278-40AE-BDDE-09A78B446655}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Tyuiu.ZaitsevMS.Sprint4.Task1.V0</RootNamespace>
-    <AssemblyName>Tyuiu.ZaitsevMS.Sprint4.Task1.V0</AssemblyName>
+    <RootNamespace>Tyuiu.ZaitsevMS.Sprint4.Task3.V0</RootNamespace>
+    <AssemblyName>Tyuiu.ZaitsevMS.Sprint4.Task3.V0</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.ZaitsevMS.Sprint4.Task1.V0.Lib\Tyuiu.ZaitsevMS.Sprint4.Task1.V0.Lib.csproj">
-      <Project>{d358bfaf-bfaa-4610-a9f2-3d4cd617507b}</Project>
-      <Name>Tyuiu.ZaitsevMS.Sprint4.Task1.V0.Lib</Name>
+    <ProjectReference Include="..\Tyuiu.ZaitsevMS.Sprint4.Task3.V0.Lib\Tyuiu.ZaitsevMS.Sprint4.Task3.V4.Lib.csproj">
+      <Project>{5e418467-3184-46af-8202-ecd7adb3cef0}</Project>
+      <Name>Tyuiu.ZaitsevMS.Sprint4.Task3.V4.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

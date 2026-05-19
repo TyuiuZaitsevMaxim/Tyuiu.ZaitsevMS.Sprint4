@@ -1,22 +1,24 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.ZaitsevMS.Sprint4.Task7.V0.Lib;
+using Tyuiu.ZaitsevMS.Sprint4.Task7.V26.Lib;
 
-namespace Tyuiu.ZaitsevMS.Sprint4.Task7.V0.Test
+namespace Tyuiu.ZaitsevMS.Sprint4.Task7.V26.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidCalc()
+        public void ValidCalculate()
         {
-            int rows = 3;
-            int columns = 3;
-            int[,] mtrx = new int[rows, columns];
-            string str = "103050709";
             DataService ds = new DataService();
+
+            int rows = 5;
+            int columns = 3;
+            string str = "351268459614723";
+
             int res = ds.Calculate(rows, columns, str);
-            int wait = 4;
+
+            int wait = 18432;
             Assert.AreEqual(wait, res);
         }
     }
