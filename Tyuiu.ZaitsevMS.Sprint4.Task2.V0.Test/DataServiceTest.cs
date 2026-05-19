@@ -5,7 +5,7 @@ using Tyuiu.ZaitsevMS.Sprint4.Task2.V24.Lib;
 namespace Tyuiu.ZaitsevMS.Sprint4.Task2.V24.Test
 {
     [TestClass]
-    public class DataServiceTest
+    public class DataServiceTest 
     {
         [TestMethod]
         public void ValidCalculate()

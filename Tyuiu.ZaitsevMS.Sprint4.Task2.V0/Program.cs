@@ -8,7 +8,7 @@ using Tyuiu.ZaitsevMS.Sprint4.Task2.V24.Lib;
 namespace Tyuiu.ZaitsevMS.Sprint4.Task2.V24
 {
     internal class Program
-    {
+    { 
         static void Main(string[] args)
         {
             Random rnd = new Random();
